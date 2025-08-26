@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       tailwindcss(),
     ]
   },
+  components: ['~/components/UI', '~/components/Layout'],
   app: {
     head: {
       link: [
@@ -19,7 +20,6 @@ export default defineNuxtConfig({
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap' }
-        
       ],
       script: [
         { src: "https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js" }
