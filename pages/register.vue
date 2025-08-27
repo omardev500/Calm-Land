@@ -5,7 +5,7 @@
       <h2 class="text-2xl text-center pb-1 text-slate-900 font-bold pt-1">Create a new account</h2>
       <p class="text-md text-center text-gray-500 pb-4">It's quick and easy.</p>
       <hr class="border border-gray-300" />
-      <form class="flex flex-col gap-3 px-4 pt-5 pb-3">
+      <form class="flex flex-col gap-3 px-4 pt-5 pb-3"  method="POST">
         <fieldset class="grid grid-cols-2 gap-3">
           <input type="text" name="fname" required aria-required="true" aria-label="Enter your first name" placeholder="First name" autocomplete="given-name" autofocus class="form__input" />
           <input type="text" name="surname" required aria-required="true" aria-label="Enter your surname" placeholder="Surname" autocomplete="family-name" class="form__input" />

