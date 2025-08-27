@@ -19,11 +19,25 @@
             :followings-num="Number(46)"
         />
         <!-- The Above content will be a component!! -->
-        <div class="grid grid-cols-2 p-2 gap-4">
-          <input type="password" name="new-password" aria-label="Enter a new password" placeholder="New Password" autocomplete="new-password" class="form__input" /> 
+        <!-- Education, City/Country, Bio, Languages, Job title, password -->
+        <fieldset class="p-2">
+          <label for="bio">Bio: </label>
+          <textarea id="bio" aria-label="Enter your bio" name="bio" placeholder="Tell people more about yourself.." class="block p-2 mt-2 rounded-md overflow-y-auto w-full outline-2 outline-gray-300 focus:outline-3 focus:outline-blue-500 transition transition-2s ease-out resize-none min-h-30"></textarea>
+        </fieldset>
         
+        <fieldset class="p-2 grid grid-cols-2 gap-4">
+          <legend class="col-span-full">More Info:</legend>
+          <input type="text" placeholder="City, Country" name="country-name" autocomplete="country-name" aria-label="Enter your city or country name or both" class="form__input" />
+          <input type="url" placeholder="Your Website Link" name="website-link" autocomplete="url" aria-label="Enter your website link" class="form__input" />
+        </fieldset>
+        
+        <fieldset class="grid grid-cols-3 p-2 gap-4"> <!-- Change Password -->
+          <legend class="col-span-full">Change Password: </legend>
+          <input type="password" name="current-password" aria-label="Enter your password" placeholder="Your Password" autocomplete="current-password" class="form__input" /> 
+          <input type="password" name="new-password" aria-label="Enter a new password" placeholder="New Password" autocomplete="new-password" class="form__input" /> 
           <input type="password" name="confirm-password" aria-label="Confirm your new password" placeholder="Confirm Password" autocomplete="new-password" class="form__input" /> 
-        </div>
+        </fieldset>
+        
         <input type="submit" value="Update Changes" class="self-center bg-green-500 text-white font-bold p-3 rounded-lg cursor-pointer md:text-xl hover:opacity-82 active:opacity-75 transition transition-2s ease-out mt-2" />
       </form>
       <div class="p-2">
