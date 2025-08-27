@@ -1,3 +1,10 @@
+<script setup>
+
+</script>
 <template>
-  <h1>Welcome to Profile!</h1>
+  <main>
+    <section>
+      
+    </section>
+  </main>
 </template>
