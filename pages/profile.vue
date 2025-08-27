@@ -2,7 +2,7 @@
   const isOpen = ref(false)
 </script>
 <template>
-  <main class="flex flex-col gap-2 items-center pt-4 bg-blue-50 w-screen min-h-screen overflow-x-hidden overflow-y-auto">
+  <main class="flex flex-col gap-2 items-center pt-4 bg-green-50 w-screen min-h-screen overflow-x-hidden overflow-y-auto">
     <section class="border border-gray-300 bg-white w-full md:w-160 lg:w-220 shadow-lg p-1 rounded-lg">
       <ProfileHeader 
             :is-editing="Boolean(0)"

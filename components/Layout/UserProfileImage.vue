@@ -5,8 +5,8 @@
     custom: String
   })
   let isFemale = ref(false)
-  
-  if (props.profileGender.toLowerCase() === 'female') isFemale.value = true
+  if (!props.profileGender) isFemale.value = false
+  else if (props.profileGender.toLowerCase() === 'female') isFemale.value = true
 </script>
 <template>
   <!-- 
