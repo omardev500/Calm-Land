@@ -1,6 +1,9 @@
-<script setup>
+<script setup lang="ts">
   import myImage from "./Omar.jpeg" 
   import Image from "./image.jpg";
+  
+  const userName = ref(formatUserName("OMArDev500"))
+  console.log("Username: ", userName.value)
 </script>
 <template>
   <main class="relative flex flex-col items-center pt-4 bg-green-50 w-screen min-h-screen pl-[150px] overflow-x-hidden">

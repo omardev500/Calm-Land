@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     ]
   },
   components: ['~/components/UI', '~/components/Layout'],
+  composables: ['~/composables/users'],
   app: {
     head: {
       link: [
