@@ -4,7 +4,7 @@
   })
 </script>
 <template>
-  <aside class="fixed z-40 top-0 left-0 h-screen w-[200px] animate-[sidebarAnime_0.35s_ease-out] bg-white shadow-md overflow-hidden">
+  <aside class="fixed z-40 top-0 left-0 h-screen w-[200px] animate-[sidebarAnime_0.35s_ease-out] xl:w-[250px] bg-white shadow-md overflow-hidden">
     <ul class="py-2">
       <li>
         <NuxtLink to="/profile" class="rounded-full border-3 border-green-100 mx-auto block w-14 h-14 overflow-hidden relative" aria-label="go to your profile">
@@ -28,12 +28,14 @@
         <NuxtLink to="/notifications" class="relative text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out mt-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-bell"></i><RedDot /> Notifications</NuxtLink>
       </li>
     </ul>
-    <hr class="border border-gray-100 rounded-full w-[95%] mx-auto" />
-    <h4 class="font-bold py-2 text-green-700 text-center">Nexus Social</h4>
-    <p class="text-sm text-slate-700 font-bold px-1 text-center">This project is under<br />MIT License.</p>
-    <a href="https://github.com/omardev500/Nexus-Social" target="_blank" class="block w-1/4 mx-auto rounded-full flex justify-center mt-1">
-      <i class="block mx-auto my-2 text-3xl fa-brands fa-github"></i>
-    </a>
+    
+    <div class="absolute md:bottom-4 xl:bottom-8 left-0 w-full">
+      <h4 class="font-bold py-2 text-green-700 text-center">Nexus Social</h4>
+      <p class="text-sm text-slate-700 font-bold px-1 text-center">This project is under<br />MIT License.</p>
+      <a href="https://github.com/omardev500/Nexus-Social" target="_blank" class="block w-1/4 mx-auto rounded-full flex justify-center mt-1">
+        <i class="block mx-auto my-2 text-3xl fa-brands fa-github"></i>
+      </a>
+    </div>
   </aside>
 </template>
 <style>

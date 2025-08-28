@@ -7,7 +7,7 @@
     profileGender: String,
     postsNum: Number,
     followingsNum: Number,
-    friendsNum: Number
+    followersNum: Number
   })
 </script>
 <template>
@@ -55,9 +55,9 @@
         </p>
       </div>
       <div class="flex gap-3">
-        <span class="bg-slate-700 text-white rounded-md p-2">Friends: {{ friendsNum }}</span>
-        <span class="bg-slate-700 text-white rounded-md p-2">Following: {{ followingsNum }}</span>
-        <span class="bg-slate-700 text-white rounded-md p-2">Posts: {{ postsNum }}</span>
+        <span class="bg-indigo-800 text-white rounded-md p-2">Followers: {{ followersNum }}</span>
+        <span class="bg-indigo-800 text-white rounded-md p-2">Following: {{ followingsNum }}</span>
+        <span class="bg-indigo-800 text-white rounded-md p-2">Posts: {{ postsNum }}</span>
       </div>
     </div>
   </div>

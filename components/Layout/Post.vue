@@ -49,7 +49,7 @@
           {{ postContent.slice(0, 145) }} <button class="text-slate-600 cursor-pointer" @click="contentExpanded = true"> ...more</button>
         </p>
         <p v-else-if="isContentLong && contentExpanded">
-          {{ postContent }} <br /><button class="text-slate-600 cursor-pointer" @click="contentExpanded = false"> ...less</button>
+          {{ postContent }} <button class="text-slate-600 cursor-pointer" @click="contentExpanded = false"> ...less</button>
         </p>
         <p v-else>
           {{ postContent }}

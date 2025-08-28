@@ -14,7 +14,7 @@
             profile-image="" 
             profile-name="Omar Hossam"
             profile-gender="male"
-            :friends-num="Number(15)"
+            :followers-num="Number(15)"
             :posts-num="Number(16)"
             :followings-num="Number(46)"
         />
