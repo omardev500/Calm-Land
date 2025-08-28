@@ -4,5 +4,5 @@
   })
 </script>
 <template>
-  <h1 class="select-none text-center text-blue-600 font-bold" :class="custom">facebook</h1>
+  <h1 class="select-none text-center text-[#00471A] font-bold" :class="custom">Nexus Social</h1>
 </template>

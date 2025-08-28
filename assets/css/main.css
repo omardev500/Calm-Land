@@ -18,7 +18,7 @@
 }
 .form__input:focus {
   outline-width: 3px;
-  outline-color: #2b7fff;
+  outline-color: #220AD6;
 }
 .form__radio {
   border: 2px solid #d1d5dc;
@@ -34,3 +34,4 @@
 *:has(> .tooltip-text):hover .tooltip-text {
   visibility: visible;
 }
+input[type="radio"], input[type="checkbox"] { accent-color: #220AD6; }
