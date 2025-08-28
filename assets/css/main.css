@@ -28,10 +28,4 @@
   display: flex;
   justify-content: space-between;
 }
-*:has(> .tooltip-text) {
-  position: relative;
-}
-*:has(> .tooltip-text):hover .tooltip-text {
-  visibility: visible;
-}
 input[type="radio"], input[type="checkbox"] { accent-color: #220AD6; }

@@ -7,9 +7,8 @@
     // Post Content
     postContent: String,
     postImage: String,
-    postLikes: Number,
-    postComments: Number,
-    postShares: Number,
+    postLikes: String,
+    postComments: String,
     postPublishDate: String,
     
     // Current User States (if he liked the video?, commented and so on..)
@@ -26,7 +25,7 @@
   
 </script>
 <template>
-  <article class="mt-5 lg:w-[56%] xl:w-[50%] mx-auto bg-white shadow-md p-3 rounded-lg">
+  <article class="lg:w-[56%] xl:w-[50%] mx-auto bg-white shadow-md p-3 rounded-lg">
     
     <!--------- POST HEADER ------------>
     <header class="pb-3 relative flex gap-3 ">
@@ -63,17 +62,17 @@
     <!----------------- POST FOOTER -------------------->
     <footer class="pt-3 grid grid-cols-4 gap-3">
       
-      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#003E85] bg-blue-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#003E85] hover:text-white ">
+      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#003E85] bg-blue-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#003E85] hover:text-white " :title="postLikes || 0">
         <p class="text-lg">Like </p>
         <i class="text-lg fa-solid fa-thumbs-up"></i>
       </button>
       
-      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#5700BA] bg-indigo-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#5700BA]  hover:text-white ">
+      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#5700BA] bg-indigo-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#5700BA]  hover:text-white" :title="postComments || 0">
         <p class="text-lg">Comment </p>
         <i class="text-lg fa-solid fa-message"></i>
       </button>
       
-      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#004D1C] bg-green-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#004D1C] hover:text-white ">
+      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#004D1C] bg-green-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#004D1C] hover:text-white">
         <p class="text-lg">Share </p>
         <i class="text-lg fa-solid fa-arrow-up-right-from-square"></i>
       </button>
