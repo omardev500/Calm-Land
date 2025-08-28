@@ -28,3 +28,9 @@
   display: flex;
   justify-content: space-between;
 }
+*:has(> .tooltip-text) {
+  position: relative;
+}
+*:has(> .tooltip-text):hover .tooltip-text {
+  visibility: visible;
+}

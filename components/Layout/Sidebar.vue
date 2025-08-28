@@ -4,16 +4,16 @@
   })
 </script>
 <template>
-  <aside class="fixed top-0 left-0 h-screen w-[200px] animate-[sidebarAnime_0.35s_ease-out] bg-white shadow-md overflow-hidden">
+  <aside class="fixed z-40 top-0 left-0 h-screen w-[200px] animate-[sidebarAnime_0.35s_ease-out] bg-white shadow-md overflow-hidden">
     <ul class="py-2">
       <li>
-        <NuxtLink to="/profile" class="rounded-full border-3 border-green-100 mx-auto block w-14 h-14 overflow-hidden relative">
+        <NuxtLink to="/profile" class="rounded-full border-3 border-green-100 mx-auto block w-14 h-14 overflow-hidden relative" aria-label="go to your profile">
           <UserProfileImage :profile-image="profileImage" />
         </NuxtLink>
       </li>
       <hr class="border border-gray-100 rounded-full w-[95%] mx-auto mt-2" />
       <li>
-        <NuxtLink to="/feed" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-newspaper"></i> Feed</NuxtLink>
+        <NuxtLink to="/" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out mt-2 mb-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-newspaper"></i> Feed</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/friends" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-users"></i> Friends</NuxtLink>
@@ -22,13 +22,10 @@
         <NuxtLink to="/chat" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-comment"></i> Chat</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/groups" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-users-rectangle"></i> Groups</NuxtLink>
+        <button class="text-gray-800 text-left cursor-pointer lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
       </li>
-      <li>
-        <NuxtLink to="/search" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-magnifying-glass"></i> Search</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/settings" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-cog"></i> Settings</NuxtLink>
+      <li> <!-- This will be a modal in desktop but full screen in mobile-->
+        <NuxtLink to="/notifications" class="relative text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out mt-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-bell"></i><RedDot /> Notifications</NuxtLink>
       </li>
     </ul>
     <hr class="border border-gray-100 rounded-full w-[95%] mx-auto" />
