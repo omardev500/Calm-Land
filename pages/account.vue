@@ -1,8 +1,10 @@
 <script setup lang="ts">
   import Image from './image.jpg';
   import myImage from './Omar.jpeg';
+  import { useFirstLoginStore } from "~/stores/firstLogin";
+  const useFirstLogin = useFirstLoginStore()
   
-  const isFirstTime = ref(true) // Update this line only
+  const isFirstTime = useFirstLoginStore.firstTime 
 </script>
 <template>
   <main class="relative flex flex-col items-center py-4 bg-green-50 w-screen min-h-screen overflow-x-hidden" :class="!isFirstTime ? 'pl-[150px]' : ''">
