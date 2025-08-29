@@ -22,7 +22,7 @@
         <NuxtLink to="/chat" class="text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-comment"></i> Chat</NuxtLink>
       </li>
       <li> 
-        <NuxtLink to="/notifications" class="relative text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out mt-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-bell"></i><RedDot /> Notifications</NuxtLink>
+        <NuxtLink to="/notifications" class="relative text-gray-800 lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out mt-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-bell"></i><!-- <RedDot /> --> Notifications</NuxtLink>
       </li>
       <li> <!-- This will be a modal in desktop but full screen in mobile-->
         <button class="text-gray-800 text-left cursor-pointer lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
