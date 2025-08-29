@@ -63,13 +63,15 @@
     </main>
     
     <!----------------- POST FOOTER -------------------->
-    <footer class="pt-3 grid grid-cols-6 gap-3">
+    <footer class="pt-3 flex justify-between">
       
-      <button class="flex items-center justify-center gap-5 p-1 rounded-md border-2 border-[#003E85] bg-blue-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#003E85] active:scale-120 active:rotate-5 hover:text-white " :title="postLikes || 0">
-        <p class="text-lg">{{ postLikes }}</p>
-        <i class="text-lg fa-solid fa-thumbs-up"></i>
+      <button class="flex items-center justify-center gap-5 p-2 text-xl rounded-md border-2 border-[#003E85] bg-blue-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#003E85] active:scale-120 active:rotate-5 hover:text-white " :title="postLikes || 0">
+        <p>{{ postLikes }}</p>
+        <i class="fa-solid fa-thumbs-up"></i>
       </button>
       
+      <!-- Next Versions -->
+      <!-- 
       <button class="flex items-center p-1 rounded-md justify-center gap-5 border-2 border-[#5700BA] bg-indigo-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#5700BA]  hover:text-white active:scale-120 active:rotate-5" :title="postComments || 0">
         <p class="text-lg">{{ postComments }}</p>
         <i class="text-lg fa-solid fa-message"></i>
@@ -84,6 +86,7 @@
         <p class="text-lg">Save </p>
         <i class="text-lg fa-solid fa-bookmark"></i>
       </button>
+      -->
     </footer>
   </article>
 </template>

@@ -6,7 +6,7 @@
   console.log("Username: ", userName.value)
 </script>
 <template>
-  <main class="relative flex flex-col items-center pt-4 bg-green-50 w-screen min-h-screen pl-[150px] overflow-x-hidden">
+  <main class="relative flex flex-col items-center py -4 bg-green-50 w-screen min-h-screen pl-[150px] overflow-x-hidden">
     <Sidebar :profile-image="myImage" />
     <section class="border border-gray-300 bg-white w-full md:w-130 lg:w-160  xl:w-185 shadow-lg p-1 rounded-lg">
       <ProfileHeader 
