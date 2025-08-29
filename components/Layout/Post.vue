@@ -29,16 +29,19 @@
     
     <!--------- POST HEADER ------------>
     <header class="pb-3 relative flex gap-3 ">
-      <div class="relative w-12 h-12">
-        <UserProfileImage :profile-image="authorImage" />
+      <div class="relative w-12 h-12 overflow-x-hidden" :class="!authorImage ? 'border border-2 border-slate-50/50 rounded-full' : ''">
+        <UserProfileImage :profile-image="authorImage" :icon-style="authorImage ? '' : 'text-2xl top-0'" />
       </div>
       <div>
         <h2 class="font-bold text-slate-800">{{ authorName }}</h2>
         <p class="text-sm text-slate-600">{{ postPublishDate }}</p>
       </div>
+      <!-- This button will be in the next versions -->
+      <!-- 
       <button class="cursor-pointer absolute top-1 right-2 border-transparent border-2 hover:border-gray-500 rounded-sm transition transition-1s ease-out">
         <i class="fa-solid fa-ellipsis-h"></i>
       </button>
+      -->
     </header>
     
     <!------------- POST CONTENT -------------->
@@ -60,15 +63,15 @@
     </main>
     
     <!----------------- POST FOOTER -------------------->
-    <footer class="pt-3 grid grid-cols-4 gap-3">
+    <footer class="pt-3 grid grid-cols-6 gap-3">
       
-      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#003E85] bg-blue-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#003E85] hover:text-white " :title="postLikes || 0">
-        <p class="text-lg">Like </p>
+      <button class="flex items-center justify-center gap-5 p-1 rounded-md border-2 border-[#003E85] bg-blue-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#003E85] active:scale-120 active:rotate-5 hover:text-white " :title="postLikes || 0">
+        <p class="text-lg">{{ postLikes }}</p>
         <i class="text-lg fa-solid fa-thumbs-up"></i>
       </button>
       
-      <button class="flex items-center p-1 rounded-md justify-between border-2 border-[#5700BA] bg-indigo-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#5700BA]  hover:text-white" :title="postComments || 0">
-        <p class="text-lg">Comment </p>
+      <button class="flex items-center p-1 rounded-md justify-center gap-5 border-2 border-[#5700BA] bg-indigo-50 cursor-pointer rounded-md transition-colors duration-200 hover:bg-[#5700BA]  hover:text-white active:scale-120 active:rotate-5" :title="postComments || 0">
+        <p class="text-lg">{{ postComments }}</p>
         <i class="text-lg fa-solid fa-message"></i>
       </button>
       
