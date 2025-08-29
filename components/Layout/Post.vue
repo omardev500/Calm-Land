@@ -29,7 +29,7 @@
     
     <!--------- POST HEADER ------------>
     <header class="pb-3 relative flex gap-3 ">
-      <div class="relative w-12 h-12 overflow-x-hidden" :class="!authorImage ? 'border border-2 border-slate-50/50 rounded-full' : ''">
+      <div class="relative w-12 h-12 overflow-hidden" :class="!authorImage ? 'border border-2 border-slate-50/50 rounded-full' : ''">
         <UserProfileImage :profile-image="authorImage" :icon-style="authorImage ? '' : 'text-2xl top-0'" />
       </div>
       <div>
