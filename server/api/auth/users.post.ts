@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
     const body = await readBody(event)
     const users = (await storage.getItem('users')) || []
     
-    body.password = await bcrypt.hash(body.password, 15)
+    body.passwordHash = await bcrypt.hash(body.passwordHash, 10)
     
     const newUser = { id: users.length + 1, ...body }
     
