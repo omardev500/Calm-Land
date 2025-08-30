@@ -70,7 +70,7 @@
     <TextLogo custom="text-6xl" />
     <section class="border border-gray-300 flex flex-col bg-white w-full md:w-130 shadow-lg py-3 rounded-lg mb-5">
       <h2 class="text-2xl text-center pb-1 text-slate-900 font-bold pt-1">Create a new account</h2>
-      <p class="text-md text-center text-gray-500 pb-4">It's quick and easy.</p>
+      <p class="text-md text-center text-gray-500 pb-4">Join us in our quiet space in the internet for free</p>
       <hr class="border border-gray-300" />
       <form class="flex flex-col gap-3 px-4 pt-5 pb-3" @submit.prevent="formValidate" method="POST">
         <fieldset class="grid grid-cols-2 gap-3">

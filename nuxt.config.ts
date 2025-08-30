@@ -14,13 +14,16 @@ export default defineNuxtConfig({
   composables: ['~/composables/users'],
   app: {
     head: {
+      title: "Calm Land | Your Quiet Space",
+      meta: [
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "author", content: "Omar Hossam" },
+        { name: "description", content: "Calm Land, Your Peace Space to share your thought with the world" },
+      ],
       link: [
         { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css" },
         { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/solid.min.css" },
         { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/brands.min.css" },
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: 'anonymous' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap' }
       ],
     }
   },
