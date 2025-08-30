@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import myImage from "./Omar.jpeg" 
-  import Image from "./image.jpg";
+  import myImage from "~/assets/images/Omar.jpeg" 
+  import Image from "~/assets/images/image.jpg";
   
   const userName = ref(formatUserName("OMArDev500"))
   console.log("Username: ", userName.value)

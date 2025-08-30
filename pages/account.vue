@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import Image from './image.jpg';
-  import myImage from './Omar.jpeg';
+  import Image from '~/assets/images/image.jpg';
+  import myImage from '~/assets/images/Omar.jpeg';
   
   const route = useRoute() || ''
   const isFirstTime = ref(false);
