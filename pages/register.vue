@@ -60,6 +60,7 @@
   
   const addUser = async () => {    
     isLoading.value = true;
+    
     const newUser = await $fetch("/api/auth/users", {
       method: "POST",
       body: { 
@@ -67,7 +68,7 @@
               firstName: form.value.firstName, 
               surName: form.value.surName, 
               gender: form.value.gender, 
-              password: form.value.password
+              passwordHash: form.value.password
             }
     })
     navigateTo({

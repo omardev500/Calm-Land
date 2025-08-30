@@ -10,9 +10,7 @@ export const storage = createStorage({
 export async function initDatabase() {
   const existing = await storage.getItem('users');
   if (!existing) {
-    await storage.setItem('users', [
-      { name: "Omar", email: "omarhossam50@proton.me", gender: "male" }
-    ])
+    await storage.setItem('users', [])
   }
 }
 
