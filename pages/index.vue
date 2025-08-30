@@ -15,6 +15,8 @@
     timeName.value = "Night";
   }
   
+  navigateTo("/login")
+  
 </script>
 
 <template>
