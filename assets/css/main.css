@@ -29,3 +29,12 @@
   justify-content: space-between;
 }
 input[type="radio"], input[type="checkbox"] { accent-color: #220AD6; }
+
+@keyframes customAnime1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

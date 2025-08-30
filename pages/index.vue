@@ -22,7 +22,6 @@
     <Sidebar :profile-image="myImage" />
     <section class="text-center py-2 flex flex-col gap-3">
       <h1 class="text-3xl">Good {{ timeName }}, Hager!</h1>
-      <button class="self-center bg-indigo-800 text-white text-xl font-bold cursor-pointer rounded-lg p-3 hover:opacity-85 active:opacity-75">Create Post</button>
     </section>
     <section aria-label="Your news feed" class="w-screen flex flex-col gap-5 py-4"> <!-- 100px > half the sidebar width to seem that it's at the center of the screen when the sidebar is there -->
       <Post author-name="Omar Hossam" post-publish-date="25 May" post-content="What a beautiful view in the US! ❤️" :post-image="Image" :author-image="myImage" post-likes="45" post-comments="78" />

@@ -1,17 +1,25 @@
 <script setup lang="ts">
   import Image from './image.jpg';
   import myImage from './Omar.jpeg';
-  import { useFirstLoginStore } from "~/stores/firstLogin";
-  const useFirstLogin = useFirstLoginStore()
   
-  const isFirstTime = useFirstLoginStore.firstTime 
+  const route = useRoute() || ''
+  const isFirstTime = ref(false);
+  
+  if (route) {
+    isFirstTime.value = route.query.newRegister
+  }
+  
+  const handleSubmit = async () => {
+    navigateTo("/")
+  }
+  
 </script>
 <template>
   <main class="relative flex flex-col items-center py-4 bg-green-50 w-screen min-h-screen overflow-x-hidden" :class="!isFirstTime ? 'pl-[150px]' : ''">
     <h1 v-if="isFirstTime" class="text-3xl text-indigo-900 font-bold pb-5 pt-2">Configure Your Nexus Profile</h1>
     <Sidebar v-if="!isFirstTime" :profile-image="myImage" />
     <section class="border border-gray-300 bg-white w-full md:w-130 lg:w-160  xl:w-185 shadow-lg p-2 rounded-lg">
-      <form class="flex flex-col" method="POST" >
+      <form class="flex flex-col" method="POST" @submit.prevent="handleSubmit" >
         
         <ProfileHeader 
             :is-editing="true"

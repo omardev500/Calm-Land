@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       tailwindcss(),
-    ]
+    ],
   },
   components: ['~/components/UI', '~/components/Layout'],
   composables: ['~/composables/users'],
@@ -23,5 +23,16 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap' }
       ],
     }
-  }
+  },
+  nitro: {
+    storage: {
+      db: {
+        driver: 'fs',
+        base: './.data/db'
+      }
+    },
+    experimental: {
+      database: true
+    }
+  },
 })

@@ -27,9 +27,6 @@
       <li> <!-- This will be a modal in desktop but full screen in mobile-->
         <button class="text-gray-800 text-left cursor-pointer lg:text-lg px-[6px] hover:bg-green-100 rounded-lg transition duration-200 ease-out my-1 mx-auto w-[95%] block py-2"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
       </li>
-      <li>
-        <button class="text-white bg-indigo-800 font-bold text-center cursor-pointer lg:text-lg px-[6px] hover:opacity-89 rounded-lg transition duration-200 ease-out mt-4 mx-auto w-[95%] block py-2">Logout</button>
-      </li>
     </ul>
     
     <div class="absolute md:bottom-4 xl:bottom-8 left-0 w-full">
