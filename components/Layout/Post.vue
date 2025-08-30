@@ -1,4 +1,6 @@
 <script setup>
+  import soundFile from '~/assets/sounds/like-sound.mp3' 
+  
   const props = defineProps({
     // Author
     authorImage: String,
@@ -25,6 +27,7 @@
   
 </script>
 <template>
+  
   <article class="lg:w-[56%] xl:w-[50%] mx-auto bg-white shadow-md p-3 rounded-lg">
     
     <!--------- POST HEADER ------------>

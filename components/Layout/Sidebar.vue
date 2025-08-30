@@ -30,9 +30,9 @@
     </ul>
     
     <div class="absolute md:bottom-4 xl:bottom-8 left-0 w-full">
-      <h4 class="font-bold py-2 text-green-700 text-center">Nexus Social</h4>
+      <h4 class="font-bold text-green-700 text-center m-2 border-2 border-dashed border-green-700 rounded-md p-1">Calm Land <i class="fas fa-leaf"></i></h4>
       <p class="text-sm text-slate-700 font-bold px-1 text-center">This project is under<br />MIT License.</p>
-      <a href="https://github.com/omardev500/Nexus-Social" target="_blank" class="block w-1/4 mx-auto rounded-full flex justify-center mt-1">
+      <a href="https://github.com/omardev500/Calm-Land" target="_blank" class="block w-1/4 mx-auto rounded-full flex justify-center mt-1">
         <i class="block mx-auto my-2 text-3xl fa-brands fa-github"></i>
       </a>
     </div>

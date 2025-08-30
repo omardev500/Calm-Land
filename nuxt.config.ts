@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     ],
   },
   components: ['~/components/UI', '~/components/Layout'],
-  composables: ['~/composables/users'],
+  composables: ['~/composables'],
   app: {
     head: {
       title: "Calm Land | Your Quiet Space",

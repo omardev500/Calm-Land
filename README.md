@@ -1,4 +1,4 @@
-# Nuxt Minimal Starter
+# Calm Land Social Media Website
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 

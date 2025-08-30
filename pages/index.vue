@@ -20,6 +20,7 @@
 <template>
   <main class="relative flex flex-col items-center pt-4 bg-green-50 w-screen min-h-screen pl-[100px] overflow-x-hidden">
     <Sidebar :profile-image="myImage" />
+   
     <section class="text-center py-2 flex flex-col gap-3">
       <h1 class="text-3xl">Good {{ timeName }}, Hager!</h1>
     </section>
