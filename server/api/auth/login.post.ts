@@ -1,6 +1,7 @@
 import { storage } from '~/server/database/db';
 import { getUser } from '~/server/utils/findUser';
 import bcrypt from 'bcryptjs'
+import { generateToken } from '~/server/utils/token'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
@@ -23,10 +24,25 @@ export default defineEventHandler(async (event) => {
   // 4. Remove password from response and fix syntax
   const { passwordHash, ...userWithoutPassword } = user;
   
-  // 5. Return success message with the user
+  // 5. Generate Token
+  const token = generateToken({
+    id: user.id,
+    username: user.username
+  })
+  
+  // 6. Set token as HTTP-only cookie
+  setCookie(event, 'auth_token', token, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    maxAge: 60 * 60 * 24 * 14, // 14 days
+    sameSite: 'strict'
+  })
+  
+  // 7. Return success message with the user and token
   return {
     success: true,
     message: "Login successfully",
-    user: { user }
+    user: userWithoutPassword,
+    token 
   }
 })
